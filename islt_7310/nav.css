@@ -4,7 +4,9 @@ nav ul{
                 padding: 0;
                 display:flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: left;
+                gap: 10px;
+
     }
 nav>ul li {
     width: 150px;
@@ -33,10 +35,10 @@ nav a:hover, nav a:focus {
 nav a:active{
     background-color: #BED3E9;
 }
-nav ul>li ul {
+nav ul>li>ul {
     position: absolute;
     margin-top: 0;
-    margin-left: 100%;
+    margin-left: 15%;
     display: none;
 }
 nav>ul>li:hover>ul{
@@ -56,4 +58,3 @@ nav>ul>li:hover>ul{
     a{color: #3E2E13;}
     a:hover {background-color: #ffffff;}
     }
-    
