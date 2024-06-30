@@ -1,2 +1,15 @@
-h1 {color: #93805F}
+h1 {color: #000000}
+main {color: #324C69}
+main {font-family: "Rockwell", "Helvetica", sans-serif}
+main {
+    margin: 20px;
+    padding: 10px;
+}
+body {background-color: #E8D9BE;}
+
+
+#reflect-1:first-child::first-letter {font-size:130%; font-weight: 200;}
+#reflect-1, #reflect-2, #reflect-3, #reflect-4 {text-indent: 30px}
+
+
 
