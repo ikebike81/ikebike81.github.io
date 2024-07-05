@@ -8,8 +8,8 @@ main {
 body {background-color: #E8D9BE;}
 
 .Sherman_family { 
-    max-width: 90%; 
-    max-height: 90%; 
+    max-width: 30%; 
+    max-height: 30%; 
     display: block; 
     margin: auto; 
     border-radius: 50%;
