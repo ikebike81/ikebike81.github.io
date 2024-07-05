@@ -6,7 +6,6 @@ nav ul{
                 flex-direction: row;
                 justify-content: space-evenly;
                 gap: 10px;
-
     }
 nav>ul li {
     width: 150px;
