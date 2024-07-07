@@ -1,3 +1,7 @@
+#hamburger {
+    display: none;
+}
+
 nav ul{
     list-style-type: none;
                 margin: 0;
@@ -44,6 +48,54 @@ nav>ul>li:hover>ul{
     display: block;
 }
 
+@media only screen and (max-width: 640px) {
+	#hamburger {
+		display: block;
+        padding-left: 20px;
+        width: 26px;
+        float: left;
+        font-size: 2em;
+        cursor: pointer;
+        color:black;
+        z-index: 100;
+	}
+    header {
+        text-align:right;
+        padding-right: 15px;
+        margin-top: 5px;
+    }
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px 20px 20px 0px;
+		top: 20px;
+			}
+	nav:hover ul {
+		display: block;
+        margin-top:30px;
+	}
+    nav:hover #mobileHide {
+		display: none;
+	}
+	nav li {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+    nav>ul li {
+        text-align: left;
+        font-weight: bold;
+    }
+    nav a {
+        text-decoration: none;
+        display: block;
+        border: 3px dotted #3E2E13;
+        padding: 15px 15px 15px 15px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+}
 /*ul li {
     display: inline-block;
     border: 3px dotted #000000;
