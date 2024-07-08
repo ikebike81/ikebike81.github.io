@@ -3,17 +3,19 @@
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <title>Home</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
 </head>
 <body>
     <nav>
+        <label id="hamburger">&#9776;</label>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="#projects">Projects</a>
-            <ul>
+        <li><a href="projects.html">Projects</a>
+            <ul id="mobileHide">
                 <li><a href="#link1">Sabai</a></li>
                 <li><a href="#link2">NSE</a></li>
                 <li><a href="#link3">Operations Manager</a></li>
@@ -21,18 +23,21 @@
             </ul>
         </li>
         <li><a href="reflection.html">Reflection</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="contact">Contact</a></li>
     </ul>
     </nav>
     <header>
         <h1>Home Page</h1>
     </header>
     <main>
-        <h2>Welcome</h2>
-            <p>My name is Isaac Sherman. I have many interests both professional and personal and want you to learn more about me throughout this website. I hope you can learn from my career (short, albeit) and have at least one takeaway about leadership from my experiences.</p>
+        <div class="index.wrapper">
+        <img src="Sherman_headshot.jpg" alt="Headshot" class="sherman_headshot">
+        <h2>Welcome</h2>    
+            <p class="Welcome">My name is Isaac Sherman. I have many interests both professional and personal and want you to learn more about me throughout this website. I hope you can learn from my career (short, albeit) and have at least one takeaway about leadership from my experiences.</p>
         <h2>Objectives</h2>
-            <p>I chose the professional/portfolio website to highlight my work experiences and reflect on my professional journey. Every position I have worked so far, even going back to being a cashier at a grocery store in high school, has helped shape me into the leader I am today. This website will give an opportunity to share that journey with others and hopefully inspire at least one person along the way.</p>
+            <p class="Objectives">I chose the professional/portfolio website to highlight my work experiences and reflect on my professional journey. Every position I have worked so far, even going back to being a cashier at a grocery store in high school, has helped shape me into the leader I am today. This website will give an opportunity to share that journey with others and hopefully inspire at least one person along the way.</p>
             <br>
+        </div>
     </main>
     <footer>
         <address>
