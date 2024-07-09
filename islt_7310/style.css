@@ -226,5 +226,5 @@ h1 {
                 .print_hide {
                     display: none;
                 }
-                @page {margin 2.54cm}
+                @page {margin: 2.54cm}
             }
