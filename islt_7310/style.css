@@ -8,6 +8,11 @@ main {
 }
 body {background-color: #E8D9BE;}
 
+.name {
+    font-family: "Anton SC", sans-serif;
+
+}
+
 .Sherman_family { 
     max-width: 30%; 
     max-height: 30%; 
@@ -27,8 +32,11 @@ body {background-color: #E8D9BE;}
     z-index: 1;
 }
 
-h1 {text-indent:30px;
-    text-decoration:underline ;}
+h1 {
+    text-indent:30px;
+    text-decoration:underline ;
+
+}
 #reflect-1:first-child::first-letter {font-size:130%; font-weight: 200;}
 #reflect-1, #reflect-2, #reflect-3, #reflect-4 {text-indent: 30px}
 
@@ -66,7 +74,6 @@ h1 {text-indent:30px;
     text-indent:30px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    margin:;
 }
 .reflection{
     text-indent:30px;
@@ -91,6 +98,7 @@ h1 {text-indent:30px;
     padding-right: 10%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    font-family: "Anton SC", sans-serif;
     
 }
 .in_page li {
@@ -193,4 +201,30 @@ h1 {text-indent:30px;
                     margin-right: auto;
                     float: none;   
                 }
+            }
+            @media print {
+                main {
+                    font-family: "Rockwell", "Helvetica";
+                    color: black;
+                    background-color: none;
+                    font-size: 12pt;
+            
+            
+                }
+                .education {
+                    color: black;
+                }
+                .video_resume{
+                    display: none;
+                }
+                .Sherman_family {
+                    display: none;
+                }
+                nav {
+                    display: none;
+                }
+                .print_hide {
+                    display: none;
+                }
+                @page {margin 2.54cm}
             }
