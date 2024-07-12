@@ -144,8 +144,23 @@ footer {
     padding: 10px;
     font-family: "Rockwell", "Helvetica", sans-serif;
     font-size-adjust: 50%;
-
 }
+
+
+
+.email_icon:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: ease-in 1s;
+    position: relative;
+}
+
+.phone_icon:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: ease-in 1s;
+    position: relative;
+    }
 
 /*media queries*/
             /* desktop device min width of 850 px*/
