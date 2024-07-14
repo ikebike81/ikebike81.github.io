@@ -1,0 +1,25 @@
+@media print {
+    main {
+        font-family: "Rockwell", "Helvetica";
+        color: black;
+        background-color: none;
+
+
+    }
+    .education {
+        color: black;
+    }
+    .video_resume{
+        display: none;
+    }
+    .Sherman_family {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .print_hide {
+        display: none;
+    }
+    @page {margin 2.54cm}
+}
