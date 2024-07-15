@@ -183,6 +183,26 @@ footer {
     position: relative;
     }
 
+.table1 {
+    border: 2px solid black;
+    width: 80%;
+    border-collapse: collapse;
+   } 
+.table1 th,td{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.table1 tr:nth-child(even) {
+    background-color: white;
+} 
+.table1 tr:nth-child(odd) {
+    background-color: #324C69;
+    color: white;
+}
+
+
+
 /*media queries*/
             /* desktop device min width of 850 px*/
             @media only screen and (min-width: 850px){
@@ -197,8 +217,8 @@ footer {
                 .Sherman_family { 
                     max-width: 90% ; 
                     max-height: 90% ; 
-                    display: flex; 
-                    margin: auto; 
+                    display: flex;
+                    margin: auto;
                     border-radius: 50%;
                     border: 2px solid black;   
                 }
@@ -252,8 +272,8 @@ footer {
                 }
 
                 .Sherman_family { 
-                    max-width: 45% ; 
-                    max-height: 45% ; 
+                    max-width: 75% ; 
+                    max-height: 75% ; 
                     display: block; 
                     margin: auto; 
                     border-radius: 50%;
@@ -267,6 +287,9 @@ footer {
                     margin-left: auto;
                     margin-right: auto;
                     float: none;   
+                }
+                .table1{
+                    overflow: scroll;
                 }
             }
             @media print {
