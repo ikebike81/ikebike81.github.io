@@ -61,21 +61,20 @@ h1 {
   }
   
 
-.education {
-    position:relative;
-    z-index:1;
+.education_container {
     display: block;
     width: 100%;
-    height: auto;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    justify-content: center;
-    color: #F1B82D;
-    text-size-adjust: 90%;
-    max-height: 450px;
     background: url("mizzou_jesse_hall.jpg") no-repeat;
-    background-size: cover;
+    background-size: 70% 100%;
+
+}
+.education {
+    color: #F1B82D;
+    font-size: 1em;
 }
 
 .iframe-container {
@@ -98,24 +97,27 @@ h1 {
 
 
 .artifact1 {
-    height: 80%;
-    width: 80%;
+    max-height: 50%;
+    max-width: 50%;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+
 }
 .artifact2 {
-    height: 80%;
-    width: 80%;
-    justify-content: right;
-    padding-top: 10px;
+    max-height: 50%;
+    max-width: 50%;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 .project_description{
     text-indent:30px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+
+    
 }
 .reflection{
     text-indent:30px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
 }
 
 .jump {
@@ -130,7 +132,6 @@ h1 {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
     padding-left: 10%;
     padding-right: 10%;
     border-top: 2px solid black;
@@ -143,31 +144,35 @@ h1 {
     padding: 2px 2px 2px 2px;
     color: #000000;
     text-decoration: none;
-    background-color: #7B91A8;
     border-left: 2px solid black;
     border-right: 2px solid black;
 }
 .in_page a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
-
+    text-align: center;
+}
+.in_page a:hover {
+    background: #BED3E9;
 }
 
 footer {
     display: block;
     background-image: url(./images/boat-5889919_1280.png);
+    filter: grayscale(100%);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     border: 2px solid black;
-
+    border-radius: 8px;
     margin: 20px;
     padding: 10px;
     font-family: "Rockwell", "Helvetica", sans-serif;
-    font-size-adjust: 50%;
 }
 
-
+footer a{
+    color: white;
+}
 
 .email_icon:hover {
     cursor: pointer;
@@ -240,6 +245,49 @@ input[type="submit"]:hover {
 #Message {
     height:100px;
 }
+.mizzou_copyright {
+    color:grey;
+    font-size: 8pt;
+}
+.bennett_dad {
+    float: right;
+    max-height: 20%;
+    max-width: 20%;
+    margin: 20px;
+    border: 2px solid black;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.nceo {
+    float: right;
+    max-height: 20%;
+    max-width: 20%;
+    margin: 20px;
+    border: 2px solid black;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/*Projects Page Grid Styling
+.project_description {
+    float:left;
+    max-width:1200px
+}
+.artifact1 {
+    padding: 20px;
+    max-width: 40%;
+}
+
+.reflection {
+    max-width:1200px;
+    float: left;
+}
+.artifact2 {
+    padding: 20px;
+    float:right;
+    max-width: 40%;
+}
+*/
 
 /*media queries*/
             /* desktop device min width of 850 px*/
@@ -266,17 +314,21 @@ input[type="submit"]:hover {
                     grid-gap: 10px;
                     
                 }
-                .sabai{
-                    display:grid;
-                    grid-gap: 10px;
-                    padding: 20px;
-                    grid-template-columns: 1fr 1fr;
-
-                }
                 .project_description{
                     display: flex;
                     float:left;
                 }
+                .reflection{
+                    display: flex;
+                    float:left;
+                }
+                }
+                .SRCL_director {
+                    display: block;
+                }
+                .srcl_reflection {
+                    display:block;
+                    float: none;
                 }
                 .index.wrapper {
                     display: grid;
@@ -297,6 +349,7 @@ input[type="submit"]:hover {
                 .Objectives {
                     display: flex;
                 }
+
 
 
             /* tablet device max width of 850 px*/
@@ -329,15 +382,33 @@ input[type="submit"]:hover {
                 .table1{
                     overflow: scroll;
                 }
+                .education_container {
+                    background-size: cover;
+                }
+                .nceo, .bennett_dad {
+                    float: none;
+                    max-height: 90%;
+                    max-width: 90%;
+                }
             }
+            /* phone device max width of 280 px*/
+            @media only screen and (max-width: 280px){
+                .education_container {
+                    background-size:cover;
+                }
+                .education {
+                    font-size: smaller;
+                }
+            }
+
+
+
             @media print {
                 main {
                     font-family: "Rockwell", "Helvetica";
                     color: black;
-                    background-color: none;
+                    background-color: white;
                     font-size: 12pt;
-            
-            
                 }
                 .education {
                     color: black;
